@@ -148,6 +148,7 @@ nav {
     background: radial-gradient(circle at top right,
             rgba(0, 243, 255, 0.05),
             transparent 40%);
+    animation: fadeIn 1.5s ease-out;
 }
 
 .hero-text {
@@ -209,7 +210,7 @@ nav {
     border-radius: var(--border-radius);
     filter: grayscale(20%) contrast(110%);
     /* Edgy look */
-    box-shadow: 20px 20px 0px rgba(0, 243, 255, 0.3);
+    box-shadow: 20px 20px 25px rgba(40, 137, 228, 0.654);
     /* Offset border effect */
 }
 
