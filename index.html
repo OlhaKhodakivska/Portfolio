@@ -1,214 +1,189 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Olha | Creative Portfolio</title>
-    <meta
-      name="description"
-      content="Olha's portfolio showcasing front-end projects, UI design, and interactive web experiences."
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
 
-    <script src="./script.js" defer></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Olha | Creative Portfolio</title>
+  <meta name="description"
+    content="Olha's portfolio showcasing front-end projects, UI design, and interactive web experiences." />
+  <link rel="stylesheet" href="./style.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-  <body>
-    <!--NAVIGATION-->
-    <nav>
-      <div class="logo">Olha</div>
+  <script src="./script.js" defer></script>
+</head>
 
-      <!--Hamburger Button-->
-      <button class="hamburger" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+<body>
+  <!--NAVIGATION-->
+  <nav>
+    <div class="logo"><a href="#hero">OK.</a></div>
 
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#what-i-do">Capabilities</a></li>
-        <li><a href="#portfolio">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <!--Hamburger Button-->
+    <button class="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-    <!--HERO SECTION-->
-    <header class="hero" id="hero">
-      <div class="hero-text">
-        <h1>
-          Building <br /><span class="highlight">Modern Web Interfaces</span>
-        </h1>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#what-i-do">Capabilities</a></li>
+      <li><a href="#portfolio">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!--HERO SECTION-->
+  <header class="hero" id="hero">
+    <div class="hero-text">
+      <h1>
+        Building <br /><span class="highlight">Modern Web Interfaces</span>
+      </h1>
+      <p>
+        Crafting clean, responsive, and user-focused interfaces using modern
+        front-end technologies like HTML, CSS, and JavaScript.
+      </p>
+      <a href="#portfolio" class="cta-button">View Work</a>
+    </div>
+    <div class="hero-image">
+      <!-- Unsplash source for 'neon city' or 'futuristic' -->
+      <img src="./images/front-pic.jpg" alt="Futuristic workspace" />
+    </div>
+  </header>
+
+  <!-- ABOUT ME SECTION -->
+  <section class="about" id="about">
+       <div class="about-container">
+      <div class="about-image">
+        <img src="./images/ui.jpg" alt="Olha Khodakivska" />
+      </div>
+      <div class="about-text">
+        <h3>Hi, I'm Olha Khodakivska.</h3>
         <p>
-          Crafting clean, responsive, and user-focused interfaces using modern
-          front-end technologies like HTML, CSS, and JavaScript.
+          I am a Front-End Developer based in Germany. My journey with web technologies began in 2020, and since then, I
+          have been consistently learning and building to refine my skills.
         </p>
-        <a href="#portfolio" class="cta-button">View Work</a>
+        <p>
+          Currently, I am focused on creating clean, functional, and user-friendly websites. I enjoy the process of
+          turning a design idea into a working product using HTML, CSS, and JavaScript. For me, web development is about
+          continuous growth and finding simple solutions to complex problems.
+        </p>
       </div>
-      <div class="hero-image">
-        <!-- Unsplash source for 'neon city' or 'futuristic' -->
-        <img src="./images/front-pic.jpg" alt="Futuristic workspace" />
-      </div>
-    </header>
+    </div>
+  </section>
 
-    <!-- WHAT I DO SECTION (Semantic Article tags) -->
-    <section class="what-i-do" id="what-i-do">
-      <h2 class="section-title">Capabilities</h2>
+  <!-- WHAT I DO SECTION (Semantic Article tags) -->
+  <section class="what-i-do" id="what-i-do">
+    <h2 class="section-title">Capabilities</h2>
 
-      <!-- Using Flexbox Container -->
-      <div class="services-container">
-        <article class="service-card">
-          <h3>UI Engineering</h3>
-          <p>
-            Craft intuitive and visually appealing interfaces using HTML, CSS,
-            and JavaScript frameworks.
-          </p>
-        </article>
+    <!-- Using Flexbox Container -->
+    <div class="services-container">
+      <article class="service-card">
+        <h3>UI Engineering</h3>
+        <p>
+          Craft intuitive and visually appealing interfaces using HTML, CSS,
+          and JavaScript frameworks.
+        </p>
+      </article>
 
-        <article class="service-card">
-          <h3>Interactive Design</h3>
-          <p>
-            Create engaging experiences with smooth animations,
-            micro-interactions, and responsive layouts that delight users.
-          </p>
-        </article>
+      <article class="service-card">
+        <h3>Interactive Design</h3>
+        <p>
+          Create engaging experiences with smooth animations,
+          micro-interactions, and responsive layouts that delight users.
+        </p>
+      </article>
 
-        <article class="service-card">
-          <h3>Front-End Optimization</h3>
-          <p>
-            Ensure fast, accessible, and high-performing web applications
-            through clean code, best practices, and SEO-friendly solutions.
-          </p>
-        </article>
-      </div>
-    </section>
+      <article class="service-card">
+        <h3>Front-End Optimization</h3>
+        <p>
+          Ensure fast, accessible, and high-performing web applications
+          through clean code, best practices, and SEO-friendly solutions.
+        </p>
+      </article>
+    </div>
+  </section>
 
-    <!-- PORTFOLIO SECTION -->
-    <section class="portfolio" id="portfolio">
-      <h2 class="section-title">Selected Projects</h2>
+  <!-- PORTFOLIO SECTION -->
+  <section class="portfolio" id="portfolio">
+    <h2 class="section-title">Selected Projects</h2>
 
-      <!-- Using Flexbox Container -->
-      <div class="portfolio-container">
-        <!-- Card 1 -->
-        <a
-          href="https://olhakhodakivska.github.io/winter_scene_animation_homework/"
-          target="_blank"
-          class="portfolio-card"
-          rel="noopener noreferrer"
-        >
-          <div class="portfolio-img">
-            <img src="./images/coding.jpg" alt="Animated web scene" />
-          </div>
-          <div class="portfolio-info">
-            <h3>Animated web scene</h3>
-            <p>Animated elements • 2025</p>
-          </div>
-        </a>
+    <!-- Using Flexbox Container -->
+    <div class="portfolio-container">
 
-        <!-- Card 2 -->
-        <a
-          href=" https://olhakhodakivska.github.io/architectural-company-website/"
-          target="_blank"
-          class="portfolio-card"
-          rel="noopener noreferrer"
-        >
-          <div class="portfolio-img">
-            <img src="./images/ui.jpg" alt="Architectural company dashboard" />
-          </div>
-          <div class="portfolio-info">
-            <h3>Architectural Company</h3>
-            <p>Dashboard UI • 2025</p>
-          </div>
-        </a>
-
-        <!-- Card 3 -->
-        <a
-          href="https://olhakhodakivska.github.io/yoga-site/"
-          target="_blank"
-          class="portfolio-card"
-          rel="noopener noreferrer"
-        >
-          <div class="portfolio-img">
-            <img src="./images/code.png" alt="Yoga Site" />
-          </div>
-          <div class="portfolio-info">
-            <h3>Yoga Site</h3>
-            <p>Responsive landing page • 2026</p>
-          </div>
-        </a>
-      </div>
-
-      <!-- Card 4 -->
-      <a
-        href="https://olhakhodakivska.github.io/calculator/"
-        target="_blank"
-        class="portfolio-card"
-        rel="noopener noreferrer"
-      >
+      <!-- Card 1 -->
+      <a href=" https://olhakhodakivska.github.io/architectural-company-website/" target="_blank" class="portfolio-card"
+        rel="noopener noreferrer">
         <div class="portfolio-img">
-          <img src="./images/calculator.jpg" alt="Calculator App" />
+          <img src="./screenshots/wishbone.png" alt="Architectural company dashboard" />
         </div>
         <div class="portfolio-info">
-          <h3>Calculator App</h3>
-          <p>Interactive JS project • 2025</p>
+          <h3>Architectural Company</h3>
+          <p>Dashboard UI • 2025</p>
         </div>
       </a>
-    </section>
 
-    <!-- CONTACT SECTION -->
-    <section class="contact" id="contact">
-      <h2 class="section-title">Initialize Contact</h2>
-      <form id="contact-form">
-        <div class="form-group">
-          <label for="name">ID / Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter identification"
-            required
-          />
+      <!-- Card 2 -->
+      <a href="https://olhakhodakivska.github.io/yoga-site/" target="_blank" class="portfolio-card"
+        rel="noopener noreferrer">
+        <div class="portfolio-img">
+          <img src="./screenshots/yoga.png" alt="Yoga Site" />
         </div>
-
-        <div class="form-group">
-          <label for="email">Comms Link / Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="user@domain.com"
-            required
-          />
+        <div class="portfolio-info">
+          <h3>Yoga Site</h3>
+          <p>Responsive landing page • 2026</p>
         </div>
+      </a>
 
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="Enter message date..."
-            required
-          ></textarea>
+
+      <!-- Card 3 -->
+      <a href="https://olhakhodakivska.github.io/tonya-dance-site/" target="_blank" class="portfolio-card"
+        rel="noopener noreferrer">
+        <div class="portfolio-img">
+          <img src="./screenshots/tonya.png" alt="Dance Studio" />
         </div>
+        <div class="portfolio-info">
+          <h3>Dance Studio</h3>
+          <p>Responsive web design • 2026</p>
+        </div>
+      </a>
+    </div>
 
-        <button
-          type="submit"
-          class="cta-button"
-          id="submit-btn"
-          style="width: 100%; margin-top: 1rem"
-        >
-          Send Message
-        </button>
-      </form>
-    </section>
 
-    <footer>
-      <p>&copy; <span id="year">2026</span> Olha Portfolio. System Online.</p>
-    </footer>
-  </body>
+
+
+
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Initialize Contact</h2>
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">ID / Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter identification" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Comms Link / Email</label>
+        <input type="email" id="email" name="email" placeholder="user@domain.com" required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Enter message date..." required></textarea>
+      </div>
+
+      <button type="submit" class="cta-button" id="submit-btn" style="width: 100%; margin-top: 1rem">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> Olha Portfolio. System Online.</p>
+  </footer>
+</body>
+
 </html>

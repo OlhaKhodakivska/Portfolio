@@ -135,6 +135,10 @@ nav {
     transition: all 0.3s ease;
 }
 
+section {
+    min-height: 100vh;
+}
+
 /* HERO SECTION - Refactored to Flexbox */
 .hero {
     display: flex;
@@ -212,6 +216,52 @@ nav {
     /* Edgy look */
     box-shadow: 20px 20px 25px rgba(40, 137, 228, 0.654);
     /* Offset border effect */
+}
+
+/*about section*/
+.about {
+    padding: 3rem 10%;
+    background-color: #151518;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.about-image {
+    max-width: 400px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #00f3ff;
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #00f3ff;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #ccc;
 }
 
 /* WHAT I DO SECTION */
@@ -392,7 +442,6 @@ footer {
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
-        /* Замість none */
     }
 
     .nav-links {
@@ -404,11 +453,18 @@ footer {
         width: 200px;
         padding: 1rem;
         display: none;
-        /* спочатку приховане */
     }
 
     .nav-links.active {
         display: flex;
-        /* показуємо при кліку */
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        max-width: 100%;
     }
 }
