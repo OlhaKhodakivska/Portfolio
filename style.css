@@ -136,7 +136,8 @@ nav {
 }
 
 section {
-    min-height: 100vh;
+    min-height: auto;
+    padding: 100px 5%;
 }
 
 /* HERO SECTION - Refactored to Flexbox */
@@ -146,7 +147,7 @@ section {
     /* Allows stacking on mobile */
     align-items: center;
     justify-content: space-between;
-    min-height: 90vh;
+    min-height: calc(100vh - 80px);
     padding: 4rem 5%;
     gap: 3rem;
     background: radial-gradient(circle at top right,
@@ -220,7 +221,8 @@ section {
 
 /*about section*/
 .about {
-    padding: 3rem 10%;
+    min-height: calc(100vh - 80px);
+    padding: 100px 10%;
     background-color: #151518;
     display: flex;
     flex-wrap: wrap;
@@ -266,7 +268,8 @@ section {
 
 /* WHAT I DO SECTION */
 .what-i-do {
-    padding: 6rem 5%;
+    min-height: calc(100vh - 80px);
+    padding: 15% 5%;
     background-color: #151518;
 }
 
@@ -320,7 +323,8 @@ section {
 
 /* PORTFOLIO SECTION */
 .portfolio {
-    padding: 6rem 5%;
+    padding: 15% 5%;
+    min-height: calc(100vh - 80px);
 }
 
 /* Flexbox for Portfolio */
@@ -381,7 +385,7 @@ section {
 
 /* CONTACT SECTION */
 .contact {
-    padding: 6rem 5%;
+    padding: 100px 5%;
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
