@@ -336,7 +336,7 @@ section {
 }
 
 .portfolio-card {
-    flex: 1 1 300px;
+    flex: 0 0 calc((100% - 4rem) / 3);
     background-color: var(--card-bg);
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: all 0.3s ease;
