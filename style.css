@@ -745,3 +745,22 @@ footer {
         font-size: 1.5rem;
     }
 }
+
+/* FIXED HEADER ONLY FOR MOBILE */
+@media (max-width: 768px) {
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    body {
+        padding-top: 80px;
+    }
+
+    .hero {
+        min-height: calc(100vh - 80px);
+    }
+}
