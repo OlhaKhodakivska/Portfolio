@@ -443,6 +443,15 @@ footer {
     background-color: #0d0d0f;
 }
 
+.social-icons {
+    color: rgb(200, 193, 193)
+}
+
+.social-span {
+    color: #555;
+    margin: 0 0.5rem;
+}
+
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
